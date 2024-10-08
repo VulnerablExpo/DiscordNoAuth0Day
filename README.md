@@ -6,9 +6,9 @@
 
 Severity: High
 
-Exploit Date: June 26, 2016
+Exploit Date: June 26, 2018
 
-Public: Augest 22, 2021
+Public: October 05, 2024
 
 Vulnerability Scope
 This vulnerability affects all Discord accounts. 2fa does not affect the attackers side.
