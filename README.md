@@ -55,6 +55,6 @@ To reproduce this issue an attacker needs to follow the following steps.
     1. Log all trafic on the current network.
     2. Have a user send a friend request
     3. Wait for the request to be logged
-    4. Look for a request to https://discord.com/api/v7/science
+    4. Look for a request to https://discord.com/###########
     5. Look in the JSON data for a base64 encoded string under the param AUTH
     6. Decode the Base64 string to see the token
