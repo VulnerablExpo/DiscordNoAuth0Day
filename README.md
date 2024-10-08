@@ -29,7 +29,7 @@ Credit & Payment Method Leaks
     Discord uses a token based authentication system, the token is stored in the headers or every request. Your user token is how the Discord app authenticates you as it interacts with Discord's backend servers, so you don't have to enter your username and password every time you want to send a message or make a request. It will give anyone almost unlimited access to your account.
 
 # Gateways Affected
-      GatewayGuildBanModifyDispatch
+    GatewayGuildBanModifyDispatch
     GatewayGuildDeleteDispatch
     GatewayGuildEmojisUpdateDispatch
     GatewayGuildIntegrationsUpdateDispatch
@@ -53,9 +53,9 @@ This vulnerability seems to be caused by a leakage of user headers in the POST R
 
 To reproduce this issue an attacker needs to follow the following steps.
 
-1 Log all trafic on the current network.
-2 Have a user send a friend request
-3 Wait for the request to be logged
-4 Look for a request to https://discord.com/api/v7/science
-5 Look in the JSON data for a base64 encoded string under the param AUTH
-6 Decode the Base64 string to see the token
+    1. Log all trafic on the current network.
+    2. Have a user send a friend request
+    3. Wait for the request to be logged
+    4. Look for a request to https://discord.com/api/v7/science
+    5. Look in the JSON data for a base64 encoded string under the param AUTH
+    6. Decode the Base64 string to see the token
